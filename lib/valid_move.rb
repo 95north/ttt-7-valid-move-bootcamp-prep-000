@@ -3,8 +3,8 @@
 #  selection does not fall in the range of 0 through 8, their input is invalid.    Look up the #between? method for starters.
 
 
-def valid_move?
-
+def valid_move? (array, index)
+  if ( array[index] >= 0  && array[index] < 9 )
 
   def position_taken?(array, index)
     if ( array[index] == " " ||  array[index] ==""  || array[index] == nil )
@@ -13,5 +13,6 @@ def valid_move?
       return TRUE
     end
   end
+  
   
 end
