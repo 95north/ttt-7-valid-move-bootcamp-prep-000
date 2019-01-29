@@ -5,8 +5,6 @@
 
 def valid_move? (array, index)
 
-taken = position_taken?(array, index)
-
   def position_taken?(array, index)
     if ( array[index] == " " ||  array[index] ==""  || array[index] == nil )
       return FALSE
@@ -15,7 +13,9 @@ taken = position_taken?(array, index)
     end
   end
   
-  if ( array[index] >= 0  AND array[index] < 9  AND taken == FALSE )
+taken = position_taken?(array, index)
+  
+  if ( array[index] >= 0  && array[index] < 9  && taken == FALSE )
 
      #     position_taken?(array, index) == FALSE )
     return TRUE
