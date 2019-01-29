@@ -15,7 +15,7 @@ taken = position_taken?(array, index)
     end
   end
   
-  if ( array[index] >= 0  && array[index] < 9  && taken == FALSE )
+  if ( array[index] >= 0  AND array[index] < 9  AND taken == FALSE )
 
      #     position_taken?(array, index) == FALSE )
     return TRUE
