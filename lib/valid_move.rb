@@ -14,7 +14,7 @@ def valid_move? (array, index)
   end
   
   if ( array[index] >= 0  && array[index] < 9  && 
-    position_taken?(array, index) == TRUE )
+    position_taken?(array, index) == FALSE )
     return TRUE
   else 
     return FALSE
